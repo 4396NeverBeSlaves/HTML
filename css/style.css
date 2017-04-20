@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    background-color: lightgray;
+}
+#header1{
+    background-color: rgb(51, 51, 51);
+    height: 65px;
+    width: 100%;
+    border:1px solid black;
+}
+#header1 img{
+    width: 170px;
+    height: 80px;
+    position: absolute;
+    top:-18px;
+}
+#daohang a{
+    text-decoration: none;
+    color: silver;
+}
+#daohang ul{
+    float: right;
+}
+#item{
+    font-size: 20px;
+    float: left;
+    padding-right: 30px;
+}
+#firstArticle,#secondArticle{
+    background-color: white;
+    width: 55%;
+    height: auto;
+    margin: 30px;
+    box-shadow: 4px 6px 10px gray;
+    padding: 25px;
+}
+#author{
+    font-size: 15px;
+    color: silver;
+}
+.pic{
+    background-color: white;
+    width: 55%;
+    height: 500px;
+    margin: 30px;
+    box-shadow: 4px 6px 10px gray;
+}
+.pic h2{
+    padding: 25px;
+}
+#img1{
+    margin-left:25px;
+    margin-bottom: 25px;
+    float: left;
+    border: 1px solid gray;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 10px; 
+    width: 150px;
+    height: 150px;
+}
+#img1 p{
+    text-align:center;
+    margin: 0;
+}
+#img1 img{
+    width: 120px;
+    height: 100px;
+    margin: 15px;
+}
+#last{
+    background-color: white;
+    width: 1000px;
+    height: 650px;
+    margin: 30px;
+    box-shadow: 4px 6px 10px gray;
+    padding: 25px;
+}
+#t-head{
+    background-color: black;
+    color:white;
+    text-align: left;
+    
+}
+#t-count{
+    background-color: gray;
+    
+}
+table td{
+    height: 38px;
+    font-size: 14px;
+}
+aside{
+    background-color: white;
+    position: absolute;
+    right: 265px;
+    top: 95px;
+    box-shadow: 4px 6px 10px gray;
+    width: 500px;
+    height: 600px;
+}
+aside div{
+    margin-left: 30px;
+    border-left: 4px solid gray;
+    height: 40px;
+}
+aside div h5{
+    margin-left: 12px;
+    height: 35px;
+    padding-top: 6px;
+    height: 5px;
+    }
+#gray{
+    color: silver;
+    text-align: left;
+}
+#tdleft{
+    text-align: right;
+    width: 130px;
+}
+button{
+    width: 350px;
+    height: 50px;
+    position: relative;
+    left: 13%;
+    background-color: #3388ff;
+    border:0;
+    color: white;
+    border-radius: 9px;
+}
