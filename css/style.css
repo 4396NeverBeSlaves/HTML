@@ -93,7 +93,7 @@ table td{
 aside{
     background-color: white;
     position: absolute;
-    right: 265px;
+    left: 63%;
     top: 95px;
     box-shadow: 4px 6px 10px gray;
     width: 500px;
