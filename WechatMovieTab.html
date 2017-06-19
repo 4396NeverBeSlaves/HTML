@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WechatMovieTab</title>
+    <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="components/css3-animate-it/css/animations.css" rel="stylesheet">
+    <link href="components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="components/animate.min.css" rel="stylesheet">
+    <link href="components/hover-min.css" rel="stylesheet">
+    <style>
+        ul{
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            width: 33.3333%;
+            text-align: center;
+            padding:14px 16px 14px 16px ;
+            color: rgba(102, 102, 102, 1);
+        }
+        li:hover{
+            border-bottom: 4px solid rgba(41, 204, 109, 1);
+            color: rgba(41, 204, 109, 1);
+            cursor: pointer;
+        }
+        div i{
+            position: relative;
+            bottom: 2px;
+        }
+        span{
+            font-size: 20px;
+            padding-left: 8px;
+            color: inherit;
+            /*font-family: '黑体';*/
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul>
+            <li>
+                <div><i class="fa fa-film fa-1x" aria-hidden="true"></i><span>电影票</span></div>
+            </li>
+            <li>
+                <div><i class="fa fa-music fa-1x" aria-hidden="true"></i><span>演出票</span></div>
+            </li>
+            <li>
+                <div><i class="fa fa-trophy fa-1x" aria-hidden="true"></i><span>赛事票</span> </div>
+            </li>
+        </ul>
+    </nav>
+
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="components/bootstrap/js/bootstrap.min.js"></script>
+<script src="components/css3-animate-it/js/css3-animate-it.js"></script>   
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boostrap学习</title>
+    <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="components/css3-animate-it/css/animations.css" rel="stylesheet">
+    <link href="components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="components/animate.min.css" rel="stylesheet">
+    <link href="components/hover-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      body{
+        font:normal normal 16px Verdana, Geneva, sans-serif;
+      }
+      .pic{
+        background-image: url(img/1.jpg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        width:  100%;
+        height: 100%;
+        background-repeat: no-repeat;
+      }
+      .navbar{
+        opacity:0.7; 
+      }
+      .container-fluid{
+        padding-left: 22px;
+        padding-right:22px;
+      }
+      #mainbar ul >li a{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      #mainbar ul li a{
+        font-size: 14px;
+        color: white;
+        margin-left:33px; 
+        margin-right:33px ;
+      }
+      #mainbar ul li a:hover{
+      opacity: 0.65;
+      }
+      .applelogo{
+        position: relative;
+        left: 45%;
+      }
+      .applelogo a i::before{
+        color: #fff;
+      }
+      .row{
+        display:flex;
+        justify-content: center;
+      }
+      .navbar-header button{
+        position: relative;
+        left: -86%;
+      }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div id="row" class="row">
+  <div class="center">
+  <div class="container-fluid ">
+    <div class="navbar-header">
+      <div class="applelogo">
+        <a href="#"><i class="navbar-brand fa fa-apple fa-2x visible-xs"></i> </a>
+      </div>
+      <button class="navbar-toggle colapsed " data-toggle="collapse" data-target="#mainbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--<a href="#" class="navbar-brand fa fa-apple fa-2x visible-xs" aria-hidden="true"></a>-->
+    </div>
+    <div class="collapse navbar-collapse" id="mainbar">
+      <ul class="nav navbar-nav">
+        <li><a id="lfmargin1" href="#"> <i class="fa fa-apple fa-lg hidden-xs"></i> </a></li>
+        <li><a id="lfmargin2" href="#">Mac</a></li>
+        <li><a id="lfmargin3" href="#">iPad</a></li>
+        <li><a id="lfmargin4" href="#">iPhone</a></li>
+        <li><a id="lfmargin5" href="#">Watch</a></li>
+        <li><a id="lfmargin6" href="#">Music</a></li>
+        <li><a id="lfmargin7" href="#">技术支持</a></li>
+        <li><a id="lfmargin8"  class="fa fa-search" href="#"></a></li>
+        <li><a id="lfmargin9"  class="fa fa-shopping-bag" href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  </div>
+</nav>
+<div class="pic"></div>
+
+
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="components/bootstrap/js/bootstrap.min.js"></script>
+<script src="components/css3-animate-it/js/css3-animate-it.js"></script>
+<script type="text/javascript">  
+{     
+    var side_resize=function()  
+    {   
+            width =  document.documentElement.clientWidth; 
+            document.getElementById("row").style.display="flex"
+            if (width>1300){
+              for(var i=1;i<10;i++){
+                document.getElementById("lfmargin"+i).style.marginLeft=width/64+6+"px"; 
+                document.getElementById("lfmargin"+i).style.marginRight=width/64+6+"px";  
+              }
+            }
+              else if (width<1300 && width>768){
+                for(var i=1;i<10;i++){
+                  document.getElementById("lfmargin"+i).style.marginLeft=width/72+6+"px"; 
+                  document.getElementById("lfmargin"+i).style.marginRight=width/72+6+"px";
+                }
+              }
+              else if(width<769){
+                document.getElementById("row").style.display="block"
+              }
+            document.getElementById("lfmargin1").style.marginLeft=0+"px"
+            document.getElementById("lfmargin9").style.marginRight=0+"px"
+      }
+    side_resize();  
+    window.onresize=side_resize;
+
+}  
+</script> 
+</body>
+</html>
