@@ -1,7 +1,7 @@
-[AppleNavbar.html](https://github.com/4396NeverBeSlaves/HTML/blob/master/AppleNavbar.html)
+[AppleNavbar.html](https://4396neverbeslaves.github.io/HTML/AppleNavbar.html)
 
-[Wechat.html](https://github.com/4396NeverBeSlaves/HTML/blob/master/Wechat.html)
+[Wechat.html](https://4396neverbeslaves.github.io/HTML/Wechat.html)
 
-[WechatMovieTab.html](https://github.com/4396NeverBeSlaves/HTML/blob/master/WechatMovieTab.html)
+[WechatMovieTab.html](https://4396neverbeslaves.github.io/HTML/WechatMovieTab.html)
 
-[appleStoreTab.html](https://github.com/4396NeverBeSlaves/HTML/blob/master/appleStoreTab.html)
+[appleStoreTab.html](https://4396neverbeslaves.github.io/HTML/appleStoreTab.html)
