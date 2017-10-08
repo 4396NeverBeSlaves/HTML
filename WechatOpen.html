@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WechatOpenTab</title>
+    <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="components/css3-animate-it/css/animations.css" rel="stylesheet">
+    <link href="components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="components/animate.min.css" rel="stylesheet">
+    <link href="components/hover-min.css" rel="stylesheet">
+    <style>
+        body>div {
+            width: 1000px;
+            text-align: center;
+            margin: 10px auto;
+            border-top: 1px solid #e6e7ec;
+            position: relative;
+        }
+
+        .box {
+            display: inline-block;
+            margin: 0;
+            padding-top: 30px;
+        }
+
+        ul {
+            display: flex;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 30px 0 30px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        a {
+            margin: 0 auto;
+            color: black;
+            text-decoration-style: none;
+        }
+
+        a:focus,
+        a:hover {
+            color: black;
+            text-decoration-line: none;
+        }
+
+        strong {
+            font-weight: 400;
+            margin-top: 3px;
+        }
+
+        .dazhong {
+            background: url(img/WechatOpen/WechatOpen.png) 0 -1967px no-repeat;
+            width: 64px;
+            height: 64px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .tongcheng {
+            background: url(img/WechatOpen/WechatOpen.png) 0 -3071px no-repeat;
+            width: 64px;
+            height: 64px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .qqmusic {
+            background: url(img/WechatOpen/WechatOpen.png) 0 -2417px no-repeat;
+            width: 64px;
+            height: 64px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .news {
+            background: url(img/WechatOpen/WechatOpen.png) 0 -4949px no-repeat;
+            width: 64px;
+            height: 64px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        strong {
+            display: block;
+            text-align: center;
+        }
+
+        li>div {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: auto;
+            display: none;
+            background-color: #F6F6F6;
+            text-align: left;
+            border: 1px solid #e6e7ec;
+        }
+
+        .showPage {
+            display: block;
+        }
+
+        img {
+            width: 320px;
+            height: 568px;
+            margin: 15px 10px 15px 10px;
+        }
+
+        t1 {
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        t2 {
+            position: absolute;
+            margin-top: 28px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="box">
+            <ul>
+                <li>
+                    <a id="dazhong-a" href="#"><i id="dazhong" class="dazhong"></i><strong>大众点评</strong></a>
+                    <div id="p1" class="showPage">
+                        <img src="img/WechatOpen/dazhong1.jpg" id="dazhong1"></img>
+                        <img src="img/WechatOpen/dazhong2.jpg" id="dazhong2"></img>
+                        <t1>大众点评</t1>
+                        <t2>在大众点评中，用户可以通过微信分享，将喜欢的店铺、团购快速转发给自己的好友，或分享到朋友圈，在给用户方便的同时，大众点评也获得了更多的流量与曝光。</t2>
+                    </div>
+                </li>
+                <li>
+                    <a id="tongcheng-a" href="#"><i id="tongcheng" class="tongcheng"></i><strong>同城旅游</strong></a>
+                    <div id="p2">
+                        <img src="img/WechatOpen/tongcheng1.jpg"></img>
+                        <img src="img/WechatOpen/tongcheng2.jpg"></img>
+                        <t1>同程旅游</t1>
+                        <t2>同程旅游在旗下手机客户端中，为旅游、景区、团购等多项业务增加了分享到微信好友和朋友圈的功能。用户分享后，点击可以直接进入同程网的相关链接，在微信中快捷查看，社交传播</t2>
+                    </div>
+                </li>
+                <li>
+                    <a id="qqmusic-a" href="#"><i id="qqmusic"class="qqmusic"></i><strong>QQ音乐</strong></a>
+                    <div id="p3">
+                        <img src="img/WechatOpen/qqmusic1.jpg"></img>
+                        <img src="img/WechatOpen/qqmusic2.jpg"></img>
+                        <t1>QQ音乐</t1>
+                        <t2>在QQ音乐中，用户可以将动听的歌曲通过微信分享，点歌给微信好友，或分享到微信朋友圈，在微信中，用户可以直接点击播放QQ音乐分享的歌曲。</t2>
+                    </div>
+                </li>
+                <li>
+                    <a id="news-a" href="#"><i id="news" class="news"></i><strong>腾讯新闻</strong></a>
+                    <div id="p4">
+                        <img src="img/WechatOpen/news1.jpg"></img>
+                        <img src="img/WechatOpen/news2.jpg"></img>
+                        <t1>腾讯新闻</t1>
+                        <t2>在大众点评中，用户可以通过微信分享，将喜欢的店铺、团购快速转发给自己的好友，或分享到朋友圈，在给用户方便的同时，大众点评也获得了更多的流量与曝光。</t2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="components/css3-animate-it/js/css3-animate-it.js"></script>
+    <script>
+        var dazhong = document.getElementById('dazhong')
+        var tongcheng = document.getElementById('tongcheng')
+        var qqmusic = document.getElementById('qqmusic')
+        var news = document.getElementById('news')
+        var dazhong_a = document.getElementById('dazhong-a')
+        var tongcheng_a = document.getElementById('tongcheng-a')
+        var qqmusic_a = document.getElementById('qqmusic-a')
+        var news_a = document.getElementById('news-a')
+        var p1 = document.getElementById('p1')
+        var p2 = document.getElementById('p2')
+        var p3 = document.getElementById('p3')
+        var p4 = document.getElementById('p4')
+        var Page1= function () {
+            dazhong.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -2103px no-repeat'
+            tongcheng.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -3071px no-repeat'
+            qqmusic.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -2417px no-repeat'
+            news.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -4949px no-repeat'
+            p1.className = 'showPage'
+            p2.className = ''
+            p3.className = ''
+            p4.className = ''  
+        }
+
+        var Page2=function () {
+            tongcheng.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -3207px no-repeat'
+            dazhong.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -1967px no-repeat'
+            qqmusic.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -2417px no-repeat'
+            news.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -4949px no-repeat'
+            p1.className = ''
+            p2.className = 'showPage'
+            p3.className = ''
+            p4.className = ''
+        }
+
+        var Page3= function () {
+            qqmusic.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -2553px no-repeat'
+            dazhong.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -1967px no-repeat'
+            tongcheng.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -3071px no-repeat'
+            news.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -4949px no-repeat'
+            p1.className = ''
+            p2.className = ''
+            p3.className = 'showPage'
+            p4.className = ''
+        }
+
+        var Page4=function () {
+            news.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -5085px no-repeat'
+            dazhong.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -1967px no-repeat'
+            tongcheng.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -3071px no-repeat'
+            qqmusic.style.background = 'url(img/WechatOpen/WechatOpen.png) 0 -2417px no-repeat'
+            p1.className = ''
+            p2.className = ''
+            p3.className = ''
+            p4.className = 'showPage'
+        }
+        dazhong_a.onmouseover =Page1
+        tongcheng_a.onmouseover = Page2
+        qqmusic_a.onmouseover = Page3
+        news_a.onmouseover = Page4
+        var start =function(){
+            // setTimeout(Page1,2000)
+            Page1()
+            setTimeout(Page2,2000)
+            setTimeout(Page3,4000)
+            setTimeout(Page4,6000)
+        }
+        start()
+    </script>
+</body>
+
+</html>
