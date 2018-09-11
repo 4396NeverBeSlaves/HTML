@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+        body{
+            font-size:35px;
+        }
+        #box{
+            text-align: center;
+            margin-top:20%;
+            height: 90px;
+        }
+        #down-box{
+            font-size: 18px;
+        }
+        select{
+            height: 20px;
+        }
+        #result{
+            text-align: center;
+            font-size: 30px;
+            margin-top: 40px;
+        }
+        span{
+            margin: 15px;
+        }
+        input{
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div   id="box">
+        <div  id="up-box">
+            <span>P</span>
+            <select name="s" id="s1" onchange="valuechanged()">
+                <option value="0">┓否定</option>
+                <option value="1">∧合取</option>
+                <option value="2">∨析取</option>
+                <option value="3">排斥或</option>
+                <option value="4">→条件</option>
+                <option value="5">←→双条件</option>
+            </select>
+            <span>Q</span>
+            <br>
+            
+        </div>
+        <div id="down-box">
+            <input type="radio" name="p-value" id="p0" checked="checked" value="0">0 
+            <input type="radio" name="p-value" id="p1" value="1">1 &emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="radio" name="q-value" id="q0" checked="checked" value="0">0
+            <input type="radio" name="q-value" id="q1" value="1">1
+        </div>
+        <span id="result">0</span>
+    </div>
+    <script>
+        var result=$('#result').text()
+        var selectValue=0
+        valuechanged()
+        function valuechanged(){
+            var Pvalue=$('input:radio[name=p-value]:checked').val()
+            var Qvalue=$('input:radio[name=q-value]:checked').val()
+            selectValue=$("#s1 option:selected").val()
+            console.log("selectValue"+selectValue+" Pvalue"+Pvalue+" Qvalue"+Qvalue)
+            sw(Pvalue, Qvalue)
+        }
+        $(function(){
+            $('input:radio').click(function () {
+                var Pvalue=$('input:radio[name=p-value]:checked').val()
+                var Qvalue=$('input:radio[name=q-value]:checked').val()
+                sw(Pvalue, Qvalue)
+            });
+        })
+        function sw(Pvalue, Qvalue) {
+            switch (parseInt(selectValue)) {
+                case 0:
+                    if(Pvalue==0){
+                        $('#result').text('1')
+                    }else{
+                        $('#result').text('0')
+                    }
+                break;
+                case 1:
+                    $('#result').text(Pvalue&Qvalue)
+                break;
+                case 2:
+                    $('#result').text(Pvalue|Qvalue)
+                break;
+                case 3:
+                    $('#result').text(Pvalue^Qvalue)
+                break;
+                case 4:
+                    if(Pvalue==1){
+                        if(Qvalue==0){
+                            $('#result').text('0')
+                        }else{
+                            $('#result').text('1')
+                        }
+                    }else{
+                        $('#result').text('1')
+                    }
+                break;
+                case 5:
+                    if(Pvalue==Qvalue){
+                        $('#result').text('1')
+                    }else{
+                        $('#result').text('0')
+                    }
+                break;
+        }
+        }
+    </script>
+</body>
+</html>
