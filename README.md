@@ -6,4 +6,4 @@
 
 [appleStoreTab.html](https://4396neverbeslaves.github.io/HTML/appleStoreTab.html)
 
-[Discrete Math](https://4396neverbeslaves.github.io/HTML/discrete math)
+[Discrete Math work1](https://4396neverbeslaves.github.io/HTML/discrete%20math/work1/index.html)
